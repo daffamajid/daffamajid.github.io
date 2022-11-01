@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waroenk Apabe</title>
+  <link rel="icon" href="Waroenk apabe.png" type="image/icon" sizes="16x16"
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<script>
+  alert("Selamat datang di waorenk apabe");
+  alert("Berikut ini adalah menu yang kami sediakan")
+</script>
+
+<body>
+  <section class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="seblak.jpg" alt="card image" />
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Seblak</span>
+          <span class="card__name">joss mampoes</span>
+
+          <p class="card__text">
+            Perpaduan kerupuk yang nikmat, serta bumbu pedas, dapat membuat anda merasakan sensasi pedas semampoes
+            mampoesnya.
+          </p>
+          <span class="card__title"><b>10K</b></span>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="es kobok.jpg" alt="card image" />
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Es Kobok</span>
+          <span class="card__name"><b>Rasa : </b>Taro</span>
+          <p class="card__text">
+            Es Kobok rasa taro. minuman dingin yang mampu membuat anda merasakan terbang hingga ke langit setelah
+            tegukan pertama.
+          </p>
+          <span class="card__title"><b>3K</b></span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+</body>
+
+</html>
